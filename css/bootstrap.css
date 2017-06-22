@@ -5802,6 +5802,8 @@ button.list-group-item-danger.active:focus {
   height: 0;
   padding: 0;
   overflow: hidden;
+  min-height: 420px;
+  min-width: 240px;
 }
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
