@@ -21,6 +21,11 @@
     <!-- Custom styles for this template -->
     <link href="theme.css" rel="stylesheet">
 
+    <script>
+    function resizeIframe(obj){
+      obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+    }
+    </script>
   </head>
   <body>
 
@@ -65,14 +70,13 @@
         <h1>I have no idea what to write here.</h1>
         <p>Or here.</p>
       </div>
-
-      <div style="margin: auto; border: 1px solid black;">
+    <div style="margin: auto; border: 1px solid black;">
         <div style="display: block; width: 100%; height: 100%;">
-          <section>
-          <iframe width="1138" height="560" src="https://youtube.com/embed/videoseries?list=PLVSpZD5MjEY48KqbJXPFyhRLAdBo7OwAm" frameborder="0" allowfullscreen></iframe>
-          </section>
+          <iframe src="https://youtube.com/embed/videoseries?list=PLVSpZD5MjEY48KqbJXPFyhRLAdBo7OwAm" frameborder="0" allowfullscreen scrolling="no" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:500px;width:100%;border:none;overflow:hidden;" />
         </div>
       </div>
+    </div>
+
 
 <!--
 <script>
